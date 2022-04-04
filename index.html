@@ -1,58 +1,26 @@
-<!--
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-
-
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-
-
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-
-
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous"/>
-    
     <link 
     rel="stylesheet"
     href="assets/css/style.css"/>
-    
     <title>Weather Dashboard</title>
 </head>
-
 <body>
-
     <div class="heading">
         <h1>Weather Dashboard</h1>
     </div>
-      
-<!--
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
--->
     <div class="weather-content">
         <div class="search-bar">
           <h2>Search for a City:</h2>
@@ -69,11 +37,6 @@ THEN I am presented with the city name, the date, an icon representation of weat
         </div>
         <div class="icon-column"></div>
     </div>
-    
-<!-- 
-WHEN I view future weather conditions for that city 
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
--->
     <div class="forecast">
         <h1>5-Day Forecast:<h1>
         <div class="row">
@@ -103,12 +66,3 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
- <!-- 
-example from css tricks
-<div class="parent">
-<header class="blue section" contenteditable>Header</header>
-<main class="coral section" contenteditable>Main</main>
-<footer class="purple section" contenteditable>Footer Content</footer>
-</div>
- -->

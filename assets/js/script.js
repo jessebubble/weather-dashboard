@@ -1,34 +1,11 @@
-/*
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-
-
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-
-
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-
-
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-*/
-
 // API LINK
 // "api.openweathermap.org/data/2.5/weather?q={sanantonio&appid=8296bf8b41396591977312e4998cf95e"/>
 
 // API key turned to variable. thank you youtube
 var API_KEY = '8296bf8b41396591977312e4998cf95e';
-
 // 5 Day forecast
 var forecastDays = 5;
 var savedCities = JSON.parse(localStorage.getItem('cities')) || [];
-
 // Button that allows us find the weather when a city is entered
 $('.search-btn').on('click', function()
 {
@@ -41,7 +18,6 @@ $('.search-btn').on('click', function()
     saveSearches(city);
   }
 })
-
 // FETCH the weather 
 var getWeather = (city) =>
 {
@@ -49,14 +25,12 @@ var getWeather = (city) =>
   .then((response) => response.json())
   .then((data) =>
   {
-
 // FETCH the lat/lon
 var { lat, lon } = data.city.coord;
     fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&units=imperial&exclude=hourly&minutely&appid='+ API_KEY)
     .then((response) => response.json())
     .then((data) => 
     {
-      
 // API DATA CAPTURE
       var {temp, humidity, wind_speed, uvi, dt} = data.current;
       var {icon} = data.current.weather[0];
@@ -64,7 +38,6 @@ var { lat, lon } = data.city.coord;
       var weatherIconEl = document.createElement('img');
       var uvIndexEl = document.createElement('button');
       uvIndexEl.textContent = uvi;
-      
 // test the uvi to determine which class to add to the button
       if( uvi <= 2)
       {
@@ -78,7 +51,6 @@ var { lat, lon } = data.city.coord;
       {
         $(uvIndexEl).addClass('uv-danger')
       }
-
 // update all the data on the web page
       $(weatherIconEl).attr('src', 'https://openweathermap.org/img/wn/' + icon + '.png');
       $('.city').text(city + " " + date);
@@ -111,7 +83,6 @@ var { lat, lon } = data.city.coord;
     })
   })
 }
-
 // LOCALSTORAGE save city searches
 var saveSearches = (cityName) =>
 {
@@ -134,7 +105,6 @@ var saveSearches = (cityName) =>
     getWeather(cityName);
   })
 }
-
 // Exit Data for next visit
 var clearPreviousData = () =>
 {
