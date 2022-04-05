@@ -9,6 +9,7 @@
 ## Resources
 * [OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
 * [Unsplash @ttrapani](https://unsplash.com/photos/6vXQrXVFXjI)
+* [FireShip YouTube-CSS](https://www.youtube.com/c/Fireship)
   
 ## Sample
-
+![screenshot](./assets/images/Screenshot.png)
