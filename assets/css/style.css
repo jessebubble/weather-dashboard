@@ -1,19 +1,37 @@
-  body {
-  padding: 0;
+body {
+/*   padding: 0;
   margin: 0;
   height: 100%;
-  width: 100%;
+  width: 100%; */
+  background-image: url('../images/unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
 }
 
-.heading {
-  max-width: 100%;
+.navBar, .gradient {
+  padding: 20px 35px;
   display: flex;
   justify-content: center;
-  color: white;
-  background-color: greenyellow;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  animation: move 1s infinite;
 }
 
-.weather-content {
+@keyframes move {
+  50% {
+    background-image: linear-gradient(262deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
+  }
+}
+
+
+.weather-search {
+  padding: 20px 35px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -152,4 +170,4 @@ hr.rounded {
   background-color: green;
   border-radius: 5px;
   border: none;
-}
+} 

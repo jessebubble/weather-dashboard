@@ -105,6 +105,7 @@ var saveSearches = (cityName) =>
     getWeather(cityName);
   })
 }
+
 // Exit Data for next visit
 var clearPreviousData = () =>
 {

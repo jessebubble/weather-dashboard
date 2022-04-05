@@ -8,6 +8,7 @@
 
 ## Resources
 * [OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
-
+* [Unsplash @ttrapani](https://unsplash.com/photos/6vXQrXVFXjI)
+  
 ## Sample
 
