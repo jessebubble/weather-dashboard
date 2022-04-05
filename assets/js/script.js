@@ -4,7 +4,7 @@
 // API key turned to variable. thank you youtube
 var API_KEY = '8296bf8b41396591977312e4998cf95e';
 // 5 Day forecast
-var forecastDays = 5;
+var forecastDays = 6;
 var savedCities = JSON.parse(localStorage.getItem('cities')) || [];
 // Button that allows us find the weather when a city is entered
 $('.search-btn').on('click', function()

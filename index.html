@@ -15,12 +15,12 @@
             <h1 class="gradient">        
             <i class="bi bi-lightning-fill" style="font-size: 3rem;"></i>Weather Dashboard</h1>
     </nav>
-    <div class="weather-search">
-        <div class="search-bar">
+    <div class="search-city">
            <!--  <h2>Test it out</h2> -->
-            <textarea name="search" id="city" cols="30" rows="1" placeholder="enter name of city"></textarea>
-                <button class="search-btn">Search</button>
-    <div class="weather-info">
+            <textarea name="search" id="city" cols="20" rows="1" placeholder="enter name of city"></textarea>
+            <button class="search-btn">Search</button>
+    </div>
+    <div class="search-result">
         <div class="main-column">
             <h2 class="city"></h2>
             <p class="temp"></p>
@@ -28,28 +28,15 @@
             <p class="humidity"></p>
             <p class="uvi"></p>
         </div>
-       <!--  <div class="icon-column"></div> -->
-    </div>
-    <!-- <div class="col-12 col-lg-9 d-flex flex-column">
-        <h1>5-Day Forecast:<h1> -->
-    <div class="row">
-        <div class="column">
-            <div class="day1"></div>
-        </div>
-        <div class="column">
-            <div class="day2"></div>
-        </div>          
-        <div class="column">
-            <div class="day3"></div>
-        </div>          
-        <div class="column">
-            <div class="day4"></div>
-        </div>          
-        <div class="column">
-            <div class="day5"></div>
-        </div>
-    </div>
-    
+        <section class="basic-grid">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+            <div class="card4"></div>
+            <div class="card5"></div>
+        </section>
+    </div>   
+    <!-- <div class="saved-city"></div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -67,3 +54,6 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous"/> -->
 
+       <!--  <div class="icon-column"></div> -->
+           <!-- <div class="col-12 col-lg-9 d-flex flex-column">
+        <h1>5-Day Forecast:<h1> -->
