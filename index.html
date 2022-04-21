@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather Dashboard</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous"
+        >
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" 
+        crossorigin="anonymous">
+    </script>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+        rel="stylesheet"
+        />
+    <link 
+        href="assets/css/style.css"
+        rel="stylesheet"
+        />
 </head>
-<body class ='flex-column min-100-vh'>
-    <nav class='navbar'>
-            <h1 class="gradient">        
-            <i class="bi bi-lightning-fill" style="font-size: 3rem;"></i>Weather Dashboard</h1>
+<body>
+    <nav class="navbar navbar-light  bg-transparent">
+        <div class="container-fluid">
+            <div class="social d-flex justify-content-end">
+                <a class="mx-2" href="https://twitter.com/jessebubble"><i class="fab fa-twitter fa-xl"></i></a>
+                <a class="mx-2" href="https://www.instagram.com/jessebubble"><i class="fab fa-instagram fa-xl" style="color: burlywood;"></i></a>
+                <a class="mx-2" href="https://github.com/jessebubble"><i class="fab fa-github fa-xl" style="color: blueviolet;"></i></a>
+                <a class="mx-2" href="https://www.linkedin.com/in/jessebubble"><i class="fab fa-linkedin fa-xl" style="color: turquoise;"></i></a>
+                <a class="mx-2" href="https://docs.google.com/document/d/1Ww0atp3OSEnqGajVBY_iBS2Ku4i8frrvE_MDf5SA0bY/edit?usp=sharing"><i class="fa-solid fa-user-astronaut fa-xl" style="color: yellowgreen;"></i></a>
+            </div>
+        </div>  
     </nav>
-    <div class="weather-search">
-        <div class="search-bar">
-           <!--  <h2>Test it out</h2> -->
-            <textarea name="search" id="city" cols="30" rows="1" placeholder="enter name of city"></textarea>
-                <button class="search-btn">Search</button>
-    <div class="weather-info">
+    <div class="header">
+        <h1 class="gradient">🌧️ Weather Dashboard 🌧️</h1>
+        <p style="color: rgb(99, 225, 225)">powered by Open Weather API </p>
+    </div>
+    <div class="search-city">
+         <textarea name="search" id="city" placeholder="Enter name of city..."></textarea>
+         <button class="search-btn">Search</button>
+    </div>
+    <div class="search-result">
         <div class="main-column">
             <h2 class="city"></h2>
             <p class="temp"></p>
@@ -28,42 +50,23 @@
             <p class="humidity"></p>
             <p class="uvi"></p>
         </div>
-       <!--  <div class="icon-column"></div> -->
+        <section class="basic-grid">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+            <div class="card4"></div>
+            <div class="card5"></div>
+        </section>
     </div>
-    <!-- <div class="col-12 col-lg-9 d-flex flex-column">
-        <h1>5-Day Forecast:<h1> -->
-    <div class="row">
-        <div class="column">
-            <div class="day1"></div>
-        </div>
-        <div class="column">
-            <div class="day2"></div>
-        </div>          
-        <div class="column">
-            <div class="day3"></div>
-        </div>          
-        <div class="column">
-            <div class="day4"></div>
-        </div>          
-        <div class="column">
-            <div class="day5"></div>
-        </div>
-    </div>
+
+    <footer class="footer bg-transparent small text-center text-warning">
+        <div class="container px-4 px-lg-5">&copy; JesseBubble </div>
+        
+    </footer>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
 </html>
-
-  <!--   <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> -->
- <!--    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"/> -->
-
