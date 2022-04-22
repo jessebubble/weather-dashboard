@@ -1,4 +1,6 @@
-# Weather Dashboard
+# Weather Dashboard 🌧️
+- Javascript application powered by the OpenWeather API 
+- USER will receive Current forcast and the 5-Day forcast for the city searched
 * [View My Project](https://jessebubble.github.io/weather-dashboard/)
 
 ## Description 
@@ -8,8 +10,9 @@
 
 ## Resources
 * [OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
-* [Unsplash @ttrapani](https://unsplash.com/photos/6vXQrXVFXjI)
+* [BootStrap](https://getbootstrap.com/)
+* [Unsplash Image @ttrapani](https://unsplash.com/photos/6vXQrXVFXjI)
 * [FireShip YouTube-CSS](https://www.youtube.com/c/Fireship)
   
 ## Sample
-![screenshot](./assets/images/Screenshot.png)
+![screenshot](./assets/images/dashboard.png)
